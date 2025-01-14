@@ -7,7 +7,7 @@ This repository contains the Autospace Workshop project, which includes multiple
 Before you begin, ensure you have the following installed on your system:
 
 - Node.js (>= 14.x)
-- Yarn (>= 1.22.x)
+- npm run (>= 1.22.x)
 - Docker
 - Git
 
@@ -17,17 +17,13 @@ Before you begin, ensure you have the following installed on your system:
 
 Clone the repository to your local machine using Git.
 
-```bash
-git clone https://github.com/karthickthankyou/autospace-workshop.git
-cd autospace-workshop
-```
 
 ### 2. Install Dependencies
 
-Install the project dependencies using Yarn.
+Install the project dependencies using npm run.
 
 ```
-yarn install
+npm install
 ```
 
 ### 3. Set Up Environment Variables
@@ -47,7 +43,7 @@ docker-compose up -d
 After the database is running, apply Prisma migrations to set up the database schema.
 
 ```
-yarn prisma migrate dev
+npm run prisma migrate dev
 ```
 
 ### 6. Run the Applications
@@ -60,7 +56,7 @@ Navigate to the apps/api directory and start the API server.
 
 ```
 cd apps/api
-yarn dev
+npm run dev
 ```
 
 #### WEB Applications
@@ -69,7 +65,7 @@ Navigate to the apps/web directory and start the WEB server.
 
 ```
 cd apps/web
-yarn dev
+npm run dev
 ```
 
 License
